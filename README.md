@@ -1,5 +1,6 @@
 # Little Benchmark
 > A framework for benchmarking microchips.
+
 > Please help keep the project alive by donating.
 <a href="https://liberapay.com/robksawyer/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
