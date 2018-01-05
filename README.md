@@ -2,8 +2,7 @@
 > A framework for benchmarking microchips.
 
 # Please keep the project alive by donating.
-<script src="https://liberapay.com/robksawyer/widgets/button.js"></script>
-<noscript><a href="https://liberapay.com/robksawyer/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+<a href="https://liberapay.com/robksawyer/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
 ## Options for benchmarking
 
