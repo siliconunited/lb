@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="pytest" skips="0" tests="2" time="1.853"><testcase classname="docs.check_sphinx" file="docs/check_sphinx.py" line="3" name="test_linkcheck" time="0.899612188339"><system-out>Running Sphinx v1.5.3
+making output directory...
+loading pickled environment... not yet created
+building [mo]: targets for 0 po files that are out of date
+building [linkcheck]: targets for 1 source files that are out of date
+updating environment: 1 added, 0 changed, 0 removed
+reading sources... [100%] index
+
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [100%] index
+
+
+build succeeded.
+</system-out></testcase><testcase classname="docs.check_sphinx" file="docs/check_sphinx.py" line="8" name="test_build_docs" time="0.94225692749"><system-out>Running Sphinx v1.5.3
+making output directory...
+loading pickled environment... not yet created
+building [mo]: targets for 0 po files that are out of date
+building [html]: targets for 1 source files that are out of date
+updating environment: 1 added, 0 changed, 0 removed
+reading sources... [100%] index
+
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [100%] index
+
+generating indices... genindex
+writing additional pages... search
+copying static files... done
+copying extra files... done
+dumping search index in English (code: en) ... done
+dumping object inventory... done
+build succeeded.
+</system-out></testcase></testsuite>

@@ -1,0 +1,8 @@
+{
+	"BenchmarkPackage": {
+		"Title": "Default Single Board Computer (SBC)",
+		"Version": "1.0.0",
+		"Description": "This benchmark package contains the lowest common denominator of benchmarks that run on the most commonly available SBCs.",
+		"Benchmarks": ["encode-flac", "himeno", "iozone", "ramspeed"]
+	}
+}

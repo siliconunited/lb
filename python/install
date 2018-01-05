@@ -1,0 +1,62 @@
+#!/bin/bash
+
+#
+# Little Benchmark
+# /install
+# This script installs the Little Benchmark command line interface (CLI).
+#
+
+./scripts/bar-title 'LITTLE BENCHMARK INSTALL' pwd
+
+# Setup environment variables
+export LB_VIRTUALENV_NAME='env'
+
+# This is a pew variable and it controls where the virtual environment will be created.
+export WORKON_HOME=$(pwd)
+
+echo 'Checking virtualenv env exists...'
+pew show $LB_VIRTUALENV_NAME
+
+# echo 'Switching to env as virtualenv...'
+# pew workon env
+
+# Install tox
+echo 'Installing development dependencies...'
+pew in $LB_VIRTUALENV_NAME pip install tox
+pew in $LB_VIRTUALENV_NAME pip install --ignore-installed click colorama multiprocessing progressbar urllib3 pycurl pytest pytest-cov
+
+# Install the dependencies based on a requirements file
+# pip install  -r $PWD/requirements.txt
+
+echo 'Dependencies installed.'
+pew in $LB_VIRTUALENV_NAME pip list --format=columns
+
+# Install the CLI
+export CLI_CHECK=pew in $LB_VIRTUALENV_NAME type "lb" > /dev/null
+
+COLOR_VAL=$(( ( RANDOM % 130 )  + 100 ))
+echo -en "\033[38;5;${COLOR_VAL}m"  ## set new color
+
+#if [ $CLI_CHECK ]; then
+echo 'Installing Little Benchmark CLI...'
+
+# pipsi is a wrapper around virtualenv and pip which installs scripts provided by python packages
+# into separate virtualenvs to shield them from your system and each other.
+# https://github.com/mitsuhiko/pipsi
+pew in $LB_VIRTUALENV_NAME pip install --editable $PWD
+echo 'Little Benchmark CLI installed successfully!'
+#fi
+
+#if ![ $CLI_CHECK ]; then
+#	echo 'Little Benchmark CLI is already installed.'
+#fi
+
+# Unset environment variables
+unset WORKON_HOME
+unset LB_VIRTUALENV_NAME
+unset CLI_CHECK
+
+echo -en "\033[0m"  ## reset color
+
+# --- Finished
+exit 0

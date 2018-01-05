@@ -1,0 +1,38 @@
+#!/bin/bash
+
+#
+# Little Benchmark
+# /setup.sh
+# This script handles setting up a virtualenv that can be used for development and testing
+#
+
+./scripts/bar-title 'LITTLE BENCHMARK SETUP'
+
+# Set up the virtualenv
+echo 'Checking version of Python...'
+python -V
+
+echo 'Installing pew...'
+# pip is the preferred installer program.
+# Starting with Python 2.7.9, it is included by default with the Python binary installers.
+pip install pew
+
+echo 'Pew is setting up virtualenv...'
+# Setup environment variables
+export LB_VIRTUALENV_NAME='env'
+
+# This is a pew variable and it controls where the virtual environment will be created.
+export WORKON_HOME=$(pwd)
+
+echo 'Updated the pew WORKON_HOME variable to '$WORKON_HOME'.'
+
+# usage: pew new [-hd] [-p PYTHON] [-i PACKAGES] [-a PROJECT] [-r REQUIREMENTS] envname
+# The argument `-d` keeps pew from automatically activating.
+pew new -d -a . $LB_VIRTUALENV_NAME
+
+# Unset environment variables
+unset WORKON_HOME
+unset LB_VIRTUALENV_NAME
+
+# --- Finished
+exit 0

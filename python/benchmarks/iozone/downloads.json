@@ -1,0 +1,22 @@
+{
+   "BenchmarkSuite": {
+      "Downloads": {
+         "Package": [
+            {
+               "URL": "http://www.iozone.org/src/current/iozone3_405.tar",
+               "MD5": "8e947dda623368f50fd758d012bf52d4",
+               "FileName": "iozone3_405.tar",
+               "FileSize": "1702320",
+               "PlatformSpecific": "Linux"
+            },
+            {
+               "URL": "http://www.iozone.org/src/current/IozoneSetup.zip",
+               "MD5": "69fb09fe8bcbc99827db419e02bd15dc",
+               "FileName": "IozoneSetup.zip",
+               "FileSize": "3782160",
+               "PlatformSpecific": "Windows"
+            }
+         ]
+      }
+   }
+}

@@ -1,0 +1,8 @@
+{
+  "BenchmarkTestSuite": {
+    "ResultsParser": {
+      "OutputTemplate": "Total duration: #_RESULT_# seconds",
+      "LineHint": "Total Time"
+    }
+  }
+}

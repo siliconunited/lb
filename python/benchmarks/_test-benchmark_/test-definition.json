@@ -1,0 +1,25 @@
+{
+   "BenchmarkSuite": {
+      "TestInformation": {
+         "Title": "Unit Test Benchmark",
+         "AppVersion": "1.0",
+         "Description": "This benchmark is not really a benchmark and is only used for unit testing Little Benchmark.",
+         "ResultScale": "MFLOPS",
+         "Proportion": "HIB",
+         "SubTitle": "Unit Testing",
+         "TimesToRun": "1"
+      },
+      "TestProfile": {
+         "Version": "1.0.0",
+         "SupportedPlatforms": "Linux, MacOSX",
+         "SoftwareType": "Utility",
+         "TestType": "Unit",
+         "License": "Free",
+         "Status": "Verified",
+         "ExternalDependencies": "",
+         "EnvironmentSize": "0.01",
+         "InternalTags": "",
+         "Maintainer": "Silicon United"
+      }
+   }
+}

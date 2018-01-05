@@ -1,0 +1,13 @@
+{
+   "BenchmarkSuite": {
+      "Downloads": {
+         "Package": [
+            {
+              "URL": "http://www.siliconunited.com/tests/verify.tar.gz",
+              "MD5": "c26b32c752c603e17c28a1cab4348682",
+              "FileSize": "79481"
+            }
+         ]
+      }
+   }
+}

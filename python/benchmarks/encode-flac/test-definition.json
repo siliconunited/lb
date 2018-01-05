@@ -1,0 +1,18 @@
+{
+   "BenchmarkSuite": {
+      "TestInformation": {
+         "Title": "FLAC Audio Encoding",
+         "Version": "1.3.1",
+         "Description": "This test times how long it takes to encode a sample WAV file to FLAC format three times.",
+         "SubTitle": "WAV To FLAC"
+      },
+      "TestProfile": {
+         "Version": "1.5.0",
+         "SupportedPlatforms": "Linux, MacOSX, BSD, Solaris",
+         "SoftwareType": "Utility",
+         "Dependencies": "timed-audio-encode",
+         "ProjectURL": "http://xiph.org/flac/",
+         "Maintainer": "Silicon United"
+      }
+   }
+}

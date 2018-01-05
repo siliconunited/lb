@@ -1,0 +1,8 @@
+{
+	"BenchmarkPackage": {
+		"Title": "Raspberry Pi 2",
+		"Version": "1.0.0",
+		"Description": "This benchmark package that works on Raspberry Pi 2",
+		"Benchmarks": ["encode-flac", "himeno", "iozone", "ramspeed"]
+	}
+}

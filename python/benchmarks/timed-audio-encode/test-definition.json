@@ -1,0 +1,19 @@
+{
+  "BenchmarkTestSuite": {
+    "TestInformation": {
+      "ResultScale": "Seconds",
+      "Proportion": "LIB",
+      "TimesToRun": "5"
+    },
+    "TestProfile": {
+      "Version": "1.0.0",
+      "SupportedPlatforms": "Linux, Solaris, BSD, Windows",
+      "SoftwareType": "BaseTestProfile",
+      "TestType": "Processor",
+      "License": "Free",
+      "Status": "Verified",
+      "ExternalDependencies": "build-utilities",
+      "Maintainer": "Silicon United"
+    }
+  }
+}

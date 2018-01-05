@@ -1,0 +1,7 @@
+{
+   "BenchmarkSuite": {
+      "SystemMonitor": {
+         "Sensor": "sys.time"
+      }
+   }
+}

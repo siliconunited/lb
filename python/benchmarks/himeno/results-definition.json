@@ -1,0 +1,7 @@
+{
+   "BenchmarkSuite": {
+      "ResultsParser": {
+         "OutputTemplate": "MFLOPS measured : #_RESULT_#\tcpu : 59.868463"
+      }
+   }
+}

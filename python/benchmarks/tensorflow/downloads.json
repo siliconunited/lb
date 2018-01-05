@@ -1,0 +1,12 @@
+{
+  "BenchmarkSuite": {
+    "Downloads": {
+      "Package": {
+        "URL": "http://www.siliconunited.com/benchmark-files/cifar10_tf.tar.gz",
+        "MD5": "f71780e2159320c70aea9e63f68c5ff1",
+        "SHA256": "996b444e1082a0cb70ded6d8f5d405a82162f452995e441805112681a1e83c97",
+        "FileSize": "13188"
+      }
+    }
+  }
+}

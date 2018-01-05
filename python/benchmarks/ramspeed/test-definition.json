@@ -1,0 +1,76 @@
+{
+   "BenchmarkSuite": {
+      "TestInformation": {
+         "Title": "RAMspeed SMP",
+         "Version": "3.5.0",
+         "Description": "This benchmark tests the system memory (RAM) performance.",
+         "ResultScale": "MB/s",
+         "Proportion": "HIB",
+         "TimesToRun": "1"
+      },
+      "TestProfile": {
+         "Version": "1.4.0",
+         "SupportedPlatforms": "Linux",
+         "SoftwareType": "Utility",
+         "TestType": "Memory",
+         "License": "Free",
+         "Status": "Verified",
+         "ExternalDependencies": "build-utilities",
+         "EnvironmentSize": "0.72",
+         "ProjectURL": "http://www.alasir.com/software/ramspeed/",
+         "Maintainer": "Silicon United"
+      },
+      "TestSettings": {
+         "Default": {
+            "PostArguments": "-l 10"
+         },
+         "Option": [
+            {
+               "DisplayName": "Type",
+               "Identifier": "run-type",
+               "Menu": {
+                  "Entry": [
+                     {
+                        "Name": "Copy",
+                        "Value": "COPY"
+                     },
+                     {
+                        "Name": "Scale",
+                        "Value": "SCALE"
+                     },
+                     {
+                        "Name": "Add",
+                        "Value": "ADD"
+                     },
+                     {
+                        "Name": "Triad",
+                        "Value": "TRIAD"
+                     },
+                     {
+                        "Name": "Average",
+                        "Value": "AVERAGE"
+                     }
+                  ]
+               }
+            },
+            {
+               "DisplayName": "Benchmark",
+               "Identifier": "benchmark",
+               "ArgumentPrefix": "-b",
+               "Menu": {
+                  "Entry": [
+                     {
+                        "Name": "Integer",
+                        "Value": "3"
+                     },
+                     {
+                        "Name": "Floating Point",
+                        "Value": "6"
+                     }
+                  ]
+               }
+            }
+         ]
+      }
+   }
+}

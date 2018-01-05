@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#
+# Little Benchmark
+# /activate
+# Activates the Little Benchmark testing environment
+#
+
+# Show the fancy header
+./scripts/bar-title 'LITTLE BENCHMARK ACTIVATING' pwd
+
+echo 'Switching to env as virtualenv...'
+export WORKON_HOME=$(pwd)
+pew workon env
+
+# --- Finished
+exit 0

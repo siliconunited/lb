@@ -1,0 +1,94 @@
+{
+   "BenchmarkSuite": {
+      "TestInformation": {
+         "Title": "IOzone",
+         "Version": "3.405",
+         "Description": "The IOzone benchmark tests the hard disk drive / file-system performance.",
+         "ResultScale": "MB/s",
+         "Proportion": "HIB",
+         "TimesToRun": "3"
+      },
+      "TestProfile": {
+         "Version": "1.8.0",
+         "SupportedPlatforms": "Linux, Windows",
+         "SoftwareType": "Utility",
+         "TestType": "Disk",
+         "License": "Free",
+         "Status": "Verified",
+         "ExternalDependencies": "build-utilities",
+         "EnvironmentSize": "2.3",
+         "ProjectURL": "http://www.iozone.org/",
+         "Maintainer": "Michael Larabel"
+      },
+      "TestSettings": {
+         "Default": {
+            "Arguments": "-e"
+         },
+         "Option": [
+            {
+               "DisplayName": "Record Size",
+               "Identifier": "record-size",
+               "ArgumentPrefix": "-r",
+               "Menu": {
+                  "Entry": [
+                     {
+                        "Name": "4Kb",
+                        "Value": "4k"
+                     },
+                     {
+                        "Name": "64Kb",
+                        "Value": "64k"
+                     },
+                     {
+                        "Name": "1MB",
+                        "Value": "1m"
+                     }
+                  ]
+               }
+            },
+            {
+               "DisplayName": "File Size",
+               "Identifier": "file-size",
+               "ArgumentPrefix": "-s",
+               "ArgumentPostfix": "M",
+               "Menu": {
+                  "Entry": [
+                     {
+                        "Name": "512MB",
+                        "Value": "512"
+                     },
+                     {
+                        "Name": "2GB",
+                        "Value": "2048"
+                     },
+                     {
+                        "Name": "4GB",
+                        "Value": "4096"
+                     },
+                     {
+                        "Name": "8GB",
+                        "Value": "8192"
+                     }
+                  ]
+               }
+            },
+            {
+               "DisplayName": "Disk Test",
+               "Identifier": "test",
+               "Menu": {
+                  "Entry": [
+                     {
+                        "Name": "Write Performance",
+                        "Value": "-i0"
+                     },
+                     {
+                        "Name": "Read Performance",
+                        "Value": "-i0 -i1"
+                     }
+                  ]
+               }
+            }
+         ]
+      }
+   }
+}

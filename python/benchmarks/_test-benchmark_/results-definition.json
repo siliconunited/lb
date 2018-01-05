@@ -1,0 +1,10 @@
+{
+   "BenchmarkSuite": {
+      "ResultsParser": {
+         "OutputTemplate": "Unit Test Result #_RESULT_#",
+         "MatchToTestArguments": "",
+         "LineBeforeHint": "",
+         "DivideResultBy": "1024"
+      }
+   }
+}

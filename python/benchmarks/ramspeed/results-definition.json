@@ -1,0 +1,31 @@
+{
+   "BenchmarkSuite": {
+      "ResultsParser": [
+         {
+            "OutputTemplate": "INTEGER BatchRun   Copy:      #_RESULT_# MB/s\nINTEGER BatchRun   Scale:     7578.89 MB/s\nINTEGER BatchRun   Add:       8701.14 MB/s\nINTEGER BatchRun   Triad:     8408.65 MB/s\n---\nINTEGER BatchRun   AVERAGE:   8189.55 MB/s",
+            "MatchToTestArguments": "COPY",
+            "LineHint": "Copy"
+         },
+         {
+            "OutputTemplate": "INTEGER BatchRun   Copy:      8069.52 MB/s\nINTEGER BatchRun   Scale:     #_RESULT_# MB/s\nINTEGER BatchRun   Add:       8701.14 MB/s\nINTEGER BatchRun   Triad:     8408.65 MB/s\n---\nINTEGER BatchRun   AVERAGE:   8189.55 MB/s",
+            "MatchToTestArguments": "SCALE",
+            "LineHint": "Scale"
+         },
+         {
+            "OutputTemplate": "INTEGER BatchRun   Copy:      8069.52 MB/s\nINTEGER BatchRun   Scale:     7578.89 MB/s\nINTEGER BatchRun   Add:       #_RESULT_# MB/s\nINTEGER BatchRun   Triad:     8408.65 MB/s\n---\nINTEGER BatchRun   AVERAGE:   8189.55 MB/s",
+            "MatchToTestArguments": "ADD",
+            "LineHint": "Add"
+         },
+         {
+            "OutputTemplate": "INTEGER BatchRun   Copy:      8069.52 MB/s\nINTEGER BatchRun   Scale:     7578.89 MB/s\nINTEGER BatchRun   Add:       8701.14 MB/s\nINTEGER BatchRun   Triad:     #_RESULT_# MB/s\n---\nINTEGER BatchRun   AVERAGE:   8189.55 MB/s",
+            "MatchToTestArguments": "TRIAD",
+            "LineHint": "Triad"
+         },
+         {
+            "OutputTemplate": "INTEGER BatchRun   Copy:      8069.52 MB/s\nINTEGER BatchRun   Scale:     7578.89 MB/s\nINTEGER BatchRun   Add:       8701.14 MB/s\nINTEGER BatchRun   Triad:     8408.65 MB/s\n---\nINTEGER BatchRun   AVERAGE:   #_RESULT_# MB/s",
+            "MatchToTestArguments": "AVERAGE",
+            "LineHint": "AVERAGE"
+         }
+      ]
+   }
+}

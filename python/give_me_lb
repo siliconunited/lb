@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#
+# Little Benchmark
+# /give_me_lb
+# This script handles connecting the setup, activate and install scripts in order to get
+# Little Benchmark to a system ASAP.
+#
+
+./scripts/intro
+./scripts/bar-title 'THE TEAM APPRECIATES YOU'
+
+# Setup the main tools and environment
+# Install dependencies into the environment
+# Activate the tests
+./setup && ./install
+
+# --- Finished
+exit 0

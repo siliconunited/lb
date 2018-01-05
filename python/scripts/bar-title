@@ -1,0 +1,24 @@
+#!/bin/bash
+# Handles making a pretty single line header.
+# It automatically gets the width and calculates the number of bars to add in order to
+# center the text that is passed
+# Usage:
+# ./intro "MY HEADER"
+# See more colors here http://misc.flogisoft.com/bash/tip_colors_and_formatting
+
+COLOR_VAL=$(( ( RANDOM % 130 )  + 100 ))
+echo -en "\033[38;5;${COLOR_VAL}m"  ## set new color
+
+COLUMNS=$(tput cols)
+TITLE="$1"
+BAR='='
+TOTAL=$(($COLUMNS - ${#TITLE}))
+TOTAL_BARS=$(($TOTAL / 2 - 2))
+# echo "TOTAL: "$TOTAL
+# echo "TOTAL_BARS: "$TOTAL_BARS
+printf -v str "%-${TOTAL_BARS}s" ' '
+BARS=${str// /$BAR}
+FINAL_TITLE="$BARS $TITLE $BARS"
+printf "%*s\n" $(((${#FINAL_TITLE}+$COLUMNS)/2)) "$FINAL_TITLE"
+
+echo -en "\033[0m"  ## reset color

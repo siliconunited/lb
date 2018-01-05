@@ -1,0 +1,30 @@
+*.pyc
+
+dist/
+build/
+*.egg-info/
+
+.tox/
+.coverage
+.cache/
+__pycache__
+_data
+
+# virtualenv
+env
+.env
+
+# benchmark source (you can find these via downloads.xml)
+benchmarks/*/src
+
+# The default benchmark dependency installation folder
+.littlebenchmark
+/benchmarks/*/*.tar.*
+/benchmarks/*/*.zip
+/benchmarks/*/*.tar
+logs/*/*.log
+logs/*.log
+
+# Jenkins
+jenkins.war
+jenkins/*.key

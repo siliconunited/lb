@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# This is a pew variable and it controls where the virtual environment will be created.
+export WORKON_HOME=$(pwd)
+
+# Set some environment variables
+export LB_WORKING_DIR=$(pwd)
+export LB_PYTHON_PATH=$(which python)
+export LB_SHELL=$(env | grep SHELL)
+export LB_VIRTUALENV_NAME='env'
+export LB_VIRTUALENV_DIR=$(pew dir $LB_VIRTUALENV_NAME)
+
+
+# COLOR_VAL=148
+COLOR_VAL=$(( ( RANDOM % 130 )  + 100 ))
+echo -en "\033[38;5;${COLOR_VAL}m"  ## set new color
+
+COLUMNS=$(tput cols)
+TITLE="$1"
+BAR='='
+TOTAL=$(($COLUMNS - ${#TITLE} - 2))
+TOTAL_BARS=$(($TOTAL / 2))
+TOTAL_BARS_BOTTOM=$(($COLUMNS))
+# echo "TOTAL: "$TOTAL
+# echo "TOTAL_BARS: "$TOTAL_BARS
+printf -v bars "%-${TOTAL_BARS}s" ' '
+printf -v barsBottom "%-${TOTAL_BARS_BOTTOM}s" ' '
+BARS=${bars// /$BAR}
+BARS_BOTTOM=${barsBottom// /$BAR}
+FINAL_TITLE="$BARS $TITLE $BARS"
+printf "%*s\n" $(((${#FINAL_TITLE}+$COLUMNS)/2)) "$FINAL_TITLE"
+# "File| |$(basename $2)|\n" \
+echo -e " Virtualenv| |$LB_VIRTUALENV_DIR\n" \
+"Virtualenv name| |$LB_VIRTUALENV_NAME\n" \
+"Working directory| |$LB_WORKING_DIR\n" \
+"Python path| |$LB_PYTHON_PATH\n" \
+"Shell| |$LB_SHELL\n" | column -t -s '|'
+echo $BARS_BOTTOM
+
+echo -en "\033[0m"  ## reset color
+
+# Unset environment variables
+unset LB_VIRTUALENV_DIR
+unset LB_WORKING_DIR
+unset LB_PYTHON_PATH
+unset LB_SHELL
+unset LB_VIRTUALENV_NAME
+unset WORKON_HOME

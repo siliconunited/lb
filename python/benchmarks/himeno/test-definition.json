@@ -1,0 +1,25 @@
+{
+   "BenchmarkSuite": {
+      "TestInformation": {
+         "Title": "Himeno Benchmark",
+         "Version": "3.0",
+         "Description": "The Himeno benchmark is a linear solver of pressure Poisson using a point-Jacobi method.",
+         "ResultScale": "MFLOPS",
+         "Proportion": "HIB",
+         "SubTitle": "Poisson Pressure Solver",
+         "TimesToRun": "3"
+      },
+      "TestProfile": {
+         "Version": "1.2.0",
+         "SupportedPlatforms": "Linux, Solaris, MacOSX, BSD",
+         "SoftwareType": "Utility",
+         "TestType": "Processor",
+         "License": "Free",
+         "Status": "Verified",
+         "ExternalDependencies": "build-utilities",
+         "EnvironmentSize": "0.05",
+         "InternalTags": "SMP",
+         "Maintainer": "Silicon United"
+      }
+   }
+}

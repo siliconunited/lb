@@ -1,0 +1,39 @@
+{
+  "BenchmarkTestSuite": {
+    "TestInformation": {
+      "Title": "Tensorflow",
+      "Version": "2017-02-03",
+      "Description": "This is a benchmark of the Tensorflow deep learning framework using the CIFAR10 data set.",
+      "ResultScale": "Seconds",
+      "Proportion": "LIB",
+      "TimesToRun": "3"
+    },
+    "TestProfile": {
+      "Version": "1.0.0",
+      "SupportedPlatforms": "Linux",
+      "SoftwareType": "Benchmark",
+      "TestType": "System",
+      "License": "Free",
+      "Status": "Verified",
+      "ExternalDependencies": "python",
+      "EnvironmentSize": "100",
+      "ProjectURL": "https://www.tensorflow.org",
+      "InternalTags": "SMP",
+      "Maintainer": "Silicon United",
+      "SystemDependencies": "pip3"
+    },
+    "TestSettings": {
+      "Option": {
+        "DisplayName": "Build",
+        "Identifier": "build",
+        "DefaultEntry": "0",
+        "Menu": {
+          "Entry": {
+            "Name": "Cifar10",
+            "Value": "400"
+          }
+        }
+      }
+    }
+  }
+}
